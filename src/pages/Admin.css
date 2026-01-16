@@ -1,0 +1,255 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.admin-header h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-vibrant);
+}
+
+.admin-header p {
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.admin-top-row,
+.admin-bottom-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.5rem;
+}
+
+.approval-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.approval-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.approval-item:last-child {
+    border-bottom: none;
+}
+
+.item-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-vibrant);
+}
+
+.item-meta {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.approval-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.approval-actions button {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-glass);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.approve-btn {
+    color: var(--accent-teal);
+}
+
+.approve-btn:hover {
+    background-color: var(--accent-teal-soft);
+    border-color: var(--accent-teal);
+}
+
+.reject-btn {
+    color: #f87171;
+}
+
+.reject-btn:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: #f87171;
+}
+
+.view-btn {
+    color: var(--text-dim);
+}
+
+.view-btn:hover {
+    background-color: var(--bg-surface);
+}
+
+/* Quick Actions */
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.q-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background-color: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    transition: all 0.2s;
+}
+
+.q-action-btn:hover {
+    border-color: var(--accent-teal);
+    background-color: var(--bg-surface);
+    box-shadow: var(--shadow-cyan);
+}
+
+.q-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q-icon-box.blue {
+    background-color: var(--accent-teal-soft);
+    color: var(--accent-teal);
+}
+
+.q-icon-box.navy {
+    background-color: rgba(0, 51, 102, 0.2);
+    color: #3b82f6;
+}
+
+.q-icon-box.accent {
+    background-color: rgba(148, 163, 184, 0.1);
+    color: #94a3b8;
+}
+
+.q-icon-box.light-blue {
+    background-color: rgba(45, 212, 191, 0.1);
+    color: #2dd4bf;
+}
+
+.q-action-btn span {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* Faculty Table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--bg-deep);
+}
+
+.admin-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-glass);
+    font-size: 0.875rem;
+}
+
+.faculty-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.f-avatar-small {
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-surface);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+    border: 1px solid var(--border-teal);
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background-color: var(--accent-teal-soft);
+    color: var(--accent-teal);
+}
+
+/* Report Form */
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.report-field label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-vibrant);
+}
+
+.report-field select,
+.report-field input {
+    width: 100%;
+    padding: 0.625rem;
+    border: 1px solid var(--border-glass);
+    background-color: var(--bg-surface);
+    color: var(--text-vibrant);
+    border-radius: var(--radius-md);
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.date-range input {
+    flex: 1;
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+    .admin-top-row,
+    .admin-bottom-row {
+        grid-template-columns: 1fr;
+    }
+}
